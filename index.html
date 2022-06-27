@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/style.css" />
+    <title>EMS</title>
+  </head>
+  <body>
+    <header class="intro" id="intro">
+      <div class="top">
+        <ion-icon class="hamburger" name="menu-outline"></ion-icon>
+        <img src="./Images/EMS.svg" alt="" />
+        <nav class="nav-links">
+          <a href="#intro">Intro</a>
+          <a href="#about">About</a>
+          <a href="#shop">Shop</a>
+        </nav>
+        <button id="btn-top" class="btn cart_button" id="cartButton" data-bs-toggle="modal" data-bs-target="#cartModal">
+          <img src="./Images/cart.svg" alt="" class="cart-image" />
+          <div class="cart-counter"></div>
+        </button>
+        <ion-icon class="icon" name="cart-outline"></ion-icon>
+      </div>
+      <div class="top-flex">
+        <h1>The E-millenial Store</h1>
+        <img src="./Images/heroImage.png" alt="" height="600px" />
+      </div>
+      <a href="">SHOP NOW</a>
+    </header>
+    <section class="about" id="about">
+      <article>
+        E-Millenial Store is an hypothetical online store for gadgets we believe
+        every 'Millenial' or 'Gen-Z' should have today.We've got mobile
+        phones,laptops,smartwatches and other gadgets.Explore all our gadgets
+        and choose the ones that suits you.
+      </article>
+    </section>
+    <section class="shop" id="shop">
+      <h2>our gadgets</h2>
+      <div class="cart up">
+        <div id="p1">
+          <div class="image">
+            <img src="/Images/product1.png" alt="" />
+            <div class="hvr">
+              <p>Price</p>
+              <h2 class="price">&#8358;500,000</h2>
+            </div>
+          </div>
+          <h2>samsung tv</h2>
+          <button class="cart_btn" id="1">add to cart</button>
+        </div>
+        <div id="p2">
+          <div class="image">
+            <img src="/Images/product2.png" alt="" />
+            <div class="hvr">
+              <p>Price</p>
+              <h2 class="price">&#8358;250,000</h2>
+            </div>
+          </div>
+          <h2>pixel 4a</h2>
+          <button class="cart_btn" id="2">add to cart</button>
+        </div>
+        <div id="p3">
+          <div class="image">
+            <img src="/Images/product3.png" alt="" />
+            <div class="hvr">
+              <p>Price</p>
+              <h2 class="price">&#8358;300,000</h2>
+            </div>
+          </div>
+          <h2>ps 5</h2>
+          <button class="cart_btn" id="3">add to cart</button>
+        </div>
+      </div>
+      <div class="cart down">
+        <div id="p4">
+          <div class="image">
+            <img src="/Images/product4.png" alt="" />
+            <div class="hvr">
+              <p>Price</p>
+              <h2 class="price">&#8358;800,000</h2>
+            </div>
+          </div>
+          <h2>macbook air</h2>
+          <button class="cart_btn" id="4">add to cart</button>
+        </div>
+        <div id="p5">
+          <div class="image">
+            <img src="/Images/product5.png" alt="" />
+            <div class="hvr">
+              <p>Price</p>
+              <h2 class="price">&#8358;95,000</h2>
+            </div>
+          </div>
+          <h2>apple watch</h2>
+          <button class="cart_btn" id="5">add to cart</button>
+        </div>
+        <div id="p6">
+          <div class="image">
+            <img src="/Images/product6.png" alt="" />
+            <div class="hvr">
+              <p>Price</p>
+              <h2 class="price">&#8358;75,000</h2>
+            </div>
+          </div>
+          <h2>air pods</h2>
+          <button class="cart_btn" id="6">add to cart</button>
+        </div>
+      </div>
+    </section>
+    <section class="footer">
+      <img src="./Images/EMS.svg" alt="" />
+      <nav class="nav-links">
+        <a href="">Intro</a>
+        <a href="">About</a>
+        <a href="">Shop</a>
+      </nav>
+      <div class="tag">
+        <img src="/Images/icon-facebook.svg" alt="" />
+        <img src="/Images/icon-instagram.svg" alt="" />
+        <img src="/Images/icon-twitter.svg" alt="" />
+        <img src="/Images/icon-pinterest.svg" alt="" />
+      </div>
+      <div class="copy">
+        <p>
+          &copy;2022 EMS Team. All rights reserved . Privacy Policy &copy;LRD
+          designs
+        </p>
+      </div>
+    </section>
+
+<!-- Cart Modal -->
+<div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">My Cart</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p class="empty-cart-message">You don't have any product in your cart</p>
+        <table class="table table-image d-none" id="cart_table">
+          <thead>
+            <tr>
+              <!-- <th scope="col"></th> -->
+              <th scope="col">Product</th>
+              <th scope="col">Price</th>
+              <th scope="col">Qty</th>
+              <th scope="col">Total</th>
+              <th scope="col">Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table> 
+        <div class="d-flex justify-content-end d-none price">
+          <h5>Total: <span class="final_price text-success">89$</span></h5>
+        </div>
+      </div>
+      <div class="modal-footer border-top-0 d-flex justify-content-between d-none">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" data-bs-dismiss="modal" aria-label="Close">Close</button>
+        <button type="button" class="btn btn-success">Checkout</button>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- <div class="cart-pop-up" id="pop-up">
+        jhergrgsdg
+    </div> -->
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+    <script src="/app.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
